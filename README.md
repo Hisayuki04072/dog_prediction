@@ -3,3 +3,5 @@
 wget https://github.com/fchollet/deep-learning-models/releases/download/v0.0.1/vgg16_weights_tf_dim_ordering_tf_kernels.h5
 
 app.pyと同じ階層に配置
+
+## Keras,MySQL,HTML,CSSの練習のために作りました
