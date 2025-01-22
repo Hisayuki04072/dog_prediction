@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="enter_btn">
+    <h2 class="display-6 text-center">
+        犬の写真を
+        <br>
+        アップロードしてください
+    </h2>
+    <form action = "/upload" method="post" enctype="multipart/form-data" style="width: 100%">
+        <p><input type="file" id = "upload_file" name = "upload_file" multiple="multiple" class="form-control"></p>
+        <p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-4" style="width: 100%;">
+                        <input type="submit" value="送信" class="form-control btn btn-primary" onclick="myfunction()">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p id="message">
+                </p>
+            </div>
+        </p>
+    </form>
+    <div id ="message-container" class="mt-3"></div>
+</div>
+
+{% endblock %}
